@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 13</title>
+</head>
+<body>
+    
+    <script>
+
+        var letra = prompt('Digite uma letra para verificação (a-z): ')
+        var vogais = ['a', 'e', 'i', 'o', 'u']
+        var ehVogal = false
+        
+        for (item in vogais) {
+            if (letra == vogais[item]) {
+                ehVogal = true
+            }
+        }
+
+        if (ehVogal === true) {
+            alert('A letra é uma vogal')
+        } else {
+            alert('A letra é uma consoante')
+        }
+
+    </script>
+
+</body>
+</html>
