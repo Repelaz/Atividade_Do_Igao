@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 37</title>
+</head>
+
+<body>
+
+    <script>
+
+        var lista = [1, 10, 20, 25, 50, 70]
+        var maior = lista[0]
+        var segMaior = -1
+
+        for (item = 1; item < lista.length; item++) {
+            if (lista[item] > maior) {
+                segMaior = maior
+                maior = lista[item]
+            } else if (lista[item] > segMaior && lista[item] < maior) {
+                segMaior = lista[item]
+            }
+        }
+
+        alert('O segundo numero maior e: ' + segMaior)
+
+    </script>
+
+</body>
+
+</html>

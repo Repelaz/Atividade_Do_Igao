@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 36</title>
+</head>
+
+<body>
+
+    <script>
+
+        var lista = [10, 20, 30, 40, 50]
+        var valor = parseInt(prompt("Insira um valor"))
+        var indice = -1
+
+        for (var i = 0; i < lista.length; i++) {
+            if (lista[i] == valor) {
+                indice = i
+                break
+            }
+        }
+        if (indice != -1) {
+            alert("O valor está no índice: " + indice + " posição " + (indice + 1))
+            alert(lista)
+        } else {
+            alert("O valor não está presente no array.")
+            alert(lista)
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 34</title>
+</head>
+<body>
+    
+    <script>
+
+        var numeros = [1, 1, 1, 2, 2, 3, 4, 5, 6, 6, 6]
+        var retirandoDup = []
+            for (var i = 0; i < numeros.length; i++) {
+                var existe = 0
+                for (var item = 0; item < retirandoDup.length; item++) {
+                    if (numeros[i] == retirandoDup[item]) {
+                        existe++
+                    }
+                }
+                if (existe == 0) {
+                    retirandoDup[retirandoDup.length] = numeros[i]
+                }
+            }
+            alert(numeros)
+            alert(retirandoDup)
+
+    </script>
+
+</body>
+</html>

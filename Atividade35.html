@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 35</title>
+</head>
+
+<body>
+
+    <script>
+
+        var lista1 = [1, 2, 3, 4, 5]
+        var lista2 = [6, 7, 8, 9, 10]
+
+        function unirListas(arr1, arr2) {
+            var uniao = []
+            for (var i = 0; i < arr1.length; i++) {
+                var existe = 0
+                for (var j = 0; j < uniao.length; j++) {
+                    if (arr1[i] == uniao[j]) {
+                        existe++
+                    }
+                }
+                if (existe == 0) {
+                    uniao[uniao.length] = arr1[i]
+                }
+            }
+            for (var i = 0; i < arr2.length; i++) {
+                var existe = 0
+                for (var j = 0; j < uniao.length; j++) {
+                    if (arr2[i] === uniao[j]) {
+                        existe++
+                    }
+                }
+                if (existe == 0) {
+                    uniao[uniao.length] = arr2[i]
+                }
+            }
+
+            return uniao
+        }
+
+        var resultado = unirListas(lista1, lista2)
+        
+        alert(lista1)
+        alert(lista2)
+        alert(resultado)
+
+    </script>
+
+</body>
+
+</html>
